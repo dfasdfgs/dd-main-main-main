@@ -2405,7 +2405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3b40a707a4fa647a419cfa6a7f59dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeTime: 3
+  fadeTime: 2
   fadeCurve:
     serializedVersion: 2
     m_Curve:
