@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public void LoadScene(string stage)
+    public string stage;
+
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene(stage);
+        if (collision.gameObject.tag == "pickupitem")
+        {
+            SceneManager.LoadScene("stage");
+        }
     }
 }

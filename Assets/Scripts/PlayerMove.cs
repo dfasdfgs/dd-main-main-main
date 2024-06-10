@@ -74,7 +74,6 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.tag == "item")
         {
             Getitem = true;
-            Destroy(collision.gameObject);
         }
         else if (collision.gameObject.tag == "Finish")
         {
