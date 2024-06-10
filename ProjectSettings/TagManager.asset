@@ -10,6 +10,8 @@ TagManager:
   - re
   - Die
   - Water
+  - pickupitem
+  - next
   layers:
   - Default
   - TransparentFX

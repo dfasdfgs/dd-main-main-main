@@ -7,13 +7,11 @@ public class getitem: MonoBehaviour
 {
     public SpriteRenderer Img_Renderer;
     public Sprite Sprite01;
-    public bool Isitempickup;
 
 
     void Start()
     {
         Img_Renderer = GetComponent<SpriteRenderer>();
-        Isitempickup = false;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -22,7 +20,7 @@ public class getitem: MonoBehaviour
         {
             Img_Renderer.sprite = Sprite01;
             Destroy(collision.gameObject);
-            Isitempickup = true;
+            gameObject.tag = "pickupitem";
         }
     }
 
